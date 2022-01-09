@@ -1,0 +1,10 @@
+/* Footer */
+.footer {
+	background-color: var(--footer);
+	&__text {
+		font-size: 0.875em;
+		letter-spacing: calc((1rem*5)/100);
+		font-weight: 700;
+		color: var(--white);
+	}
+}

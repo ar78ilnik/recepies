@@ -1,0 +1,14 @@
+/* Nav */
+.nav {
+	&_header {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		&_header {
+			display: block;
+		}
+	}
+}

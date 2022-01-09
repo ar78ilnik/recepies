@@ -1,0 +1,25 @@
+/* Prep*/
+.prep {
+	&__number {
+		width: 3rem;
+		height: 3rem;
+		font-size: 2rem;
+		line-height: 130%;
+		border: 3px solid var(--border);
+		border-radius: 50%;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.prep {
+		&__number {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+		&__text {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+	}
+}

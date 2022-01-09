@@ -1,0 +1,16 @@
+/* Button */
+.button {
+	&_input {
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: calc((1rem*3)/100);
+		background-color: var(--white);
+		border: 0;
+		border: 1px solid var(--border);
+		border-radius: 20px;
+		padding: 10px 20px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

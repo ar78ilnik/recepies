@@ -1,0 +1,10 @@
+/* Photos */
+.photos {
+	display: none;
+}
+
+@media (min-width: 1440px) {
+	.photos {
+		display: block;
+	}
+}

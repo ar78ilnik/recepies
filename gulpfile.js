@@ -68,7 +68,7 @@ function copy() {
     return gulp.src([
             'app/fonts/**/*.*',
             'app/js/**/*.js',
-            'app/img/**/*.jpg'
+            'app/img/**/*.{jpg,png}'
         ], {
             base: 'app',
         })

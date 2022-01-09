@@ -2,4 +2,31 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	object-fit: cover;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+article {
+	margin-bottom: 40px;
+}
+
+/* Colors */
+:root {
+	--text: #444444;
+	--black: #000000;
+	--white: #ffffff;
+	--border: #a2abbd;
+	--border-green: #449205;
+	--footer: #282a2d;
 }

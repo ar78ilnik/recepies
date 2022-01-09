@@ -1,4 +1,7 @@
+/* Title */
 .title {
+    font-family: 'RobotoCondenced-Bold', sans-serif;
+    line-height: 150%;
 	&_h1 {
 		position: absolute;
         width: 1px;
@@ -6,4 +9,26 @@
         overflow: hidden;
         clip: rect(0 0 0 0);
 	}
+    &_h2 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    &_h3 {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+    &_h4 {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        &_h2 {
+            text-align: center;
+        }
+        &_h3 {
+            font-size: 24px;
+        }
+    }
 }

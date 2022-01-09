@@ -1,0 +1,19 @@
+/* Lifehack*/
+.lifehack {
+	font-family: 'RobotoCondenced-Bold', sans-serif;
+	font-weight: 700;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-top: 5px solid var(--border-green);
+	border-bottom: 5px solid var(--border-green);
+	&__text {
+		margin: 1rem auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.lifehack {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+}

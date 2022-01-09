@@ -1,0 +1,32 @@
+/* Img */
+.img {
+	width: 100%;
+	&_comments {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+}
+
+@media (min-width: 768px) {
+	.img {
+		&_article {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		&_prep {
+			grid-column: 1/3;
+			grid-row: 2/3;
+		}
+		&_about {
+			order: 0;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.img {
+		&_about {
+			display: none;
+		}
+	}
+}

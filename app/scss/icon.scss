@@ -1,0 +1,34 @@
+/* Icon */
+.icon {
+	&_cross {
+		width: 34px;
+		height: 34px;
+	}
+	&_menu {
+		width: 25px;
+		height: 25px;
+	}
+	&_arrow-menu {
+		width: 30px;
+		height: 30px;
+	}
+	&_dot {
+		width: 5px;
+		height: 5px;
+		fill: var(--text);
+	}
+	&_feedback {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.icon {
+		&_kcal {
+			width: 24px;
+			height: 24px;
+			stroke: var(--text);
+		}
+	}
+}

@@ -1,5 +1,35 @@
+/* Header */
 .header {
 	&__menu {
+		display: block;
+		position: relative;
+		border-top: 1px solid var(--border);
+		border-bottom: 1px solid var(--border);
+		line-height: 4rem;
+		text-align: center;
+		cursor: pointer;
+	}
+	&__popup {
 		display: none;
+		&_open {
+			display: block;
+			width: 100%;
+			background-color: var(--white);
+			position: absolute;
+			top: 4rem;
+			right: 0;
+			z-index: 1;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__popup {
+			display: block;
+		}
+		&__name {
+			display: none;
+		}
 	}
 }

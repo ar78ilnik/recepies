@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.min.css">
+		<title>Испанские рецепты</title>
+	</head>
+	<body class="body">
+		@@include('html_components/_header.html')
+		<h1 class="title title_h1">Обо мне</h1>
+		<div class="container container_body">
+			<main class="main">
+				<div class="container container_main">
+					<article class="article article_about">
+						<h2 class="title title_h2">ОБО МНЕ</h2>
+						<img class="img img_about" src="img/me1-320.jpg" alt="">
+						<h3 class="title title_h2">Hola!  /  Привет!</h3>
+						<div class="article__texts">
+							<p class="article__text">Меня зовут Илья и я начал этот блог потому что хочу собрать
+								и сохранить рецепты многочисленных регионов Испании, которые называют Испанская кухня. Я жил в Испании, в Мадриде. И хотя учился на геолога, но мне всегда нравилась готовить, поэтому
+								я посвятил свое время именно этому делу.
+							</p>
+							<p class="article__text">Я много путешествовал по Испании и не переставал открывать для себя новые блюда, новые рецепты, новые вкусы, новые сочетания. Испанская кухня это прежде всего морепродукты — Испанию омывают моря и океан. Морепродукты на любой вкус
+								и кошелек. Также есть качественное мясо, сыры, фрукты и т.д. Можно продолжать очень долго.
+							</p>
+							<div class="lifehack">
+								<p class="lifehack__text">Мне очень нравится пробовать новые блюда, придумывать, узнавать, разговаривать, путешествовать, мечтать и…
+								я пишу потому что мне нравиться делиться своими впечатлениями. И, как говорил герой Buzz Lightyear: «hasta el infinito y más allá».</p>
+								<p class="lifehack__text">И, конечно же, я люблю свой блог «Испанские рецепты»
+									и социальные сети, которые поддерживают его. Меня поражает этот виртуальный мир, который приближает все далекое и, парадоксально, может отдалить самое близкое. Но что несомненно меня вдохновляет — это верность
+									и отношение, выраженное в часах, проведенных на кухне любителей Испанской кухни, таких же как и я.
+								</p>
+								<p class="lifehack__text">Добро пожаловать на мой блог «Испанские рецепты». Чувствуйте себя как дома, а значит проходите на кухню....</p>
+							</div>
+						</div>
+					</article>
+					@@include('html_components/_comments.html')
+				</div>
+			</main>
+			<aside class="aside">
+				<div class="container container_aside">
+					@@include('html_components/_photos.html')
+					@@include('html_components/_search.html')
+					<section class="category">
+						<h2 class="title title_h2">КАТЕГОРИИ:</h2>
+						@@include('html_components/_list-noMenu.html')
+					</section>
+					@@include('html_components/_alpha.html')
+					@@include('html_components/_new.html')
+					@@include('html_components/_tags.html')
+				</div>
+			</aside>
+		</div>
+		@@include('html_components/_footer.html')
+	</body>
+	<script src="js/script.js"></script>
+</html>
