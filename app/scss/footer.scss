@@ -1,6 +1,11 @@
 /* Footer */
 .footer {
 	background-color: var(--footer);
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	&__text {
 		font-size: 0.875em;
 		letter-spacing: calc((1rem*5)/100);

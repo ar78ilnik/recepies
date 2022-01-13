@@ -10,10 +10,12 @@
 		line-height: 2rem;
 		letter-spacing: calc((1rem*1)/100);
 	}
-	&_menu {
+	&_menu,
+	&_no-menu {
 		display: inline-block;
 		line-height: 4rem;
 		text-align: left;
+		padding-left: 1rem;
 	}
 	&_gen,
 	&_article,
@@ -32,6 +34,7 @@
 	&_alpha {
 		line-height: 4rem;
 		text-align: left;
+		padding-left: 1rem;
 	}
 	&_new {
 		display: flex;
@@ -40,12 +43,14 @@
 	&_share {
 		width: 24px;
 		height: 24px;
-		background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H2C0.895 0 0 0.895 0 2V16C0 17.105 0.895 18 2 18H9.621V11.039H7.278V8.314H9.621V6.309C9.621 3.985 11.042 2.718 13.116 2.718C13.815 2.716 14.513 2.752 15.208 2.823V5.253H13.78C12.65 5.253 12.43 5.787 12.43 6.575V8.31H15.13L14.779 11.035H12.414V18H16C17.105 18 18 17.105 18 16V2C18 0.895 17.105 0 16 0Z' fill='%23444444'/%3E%3C/svg%3E");
 	}
 }
 
 @media (min-width: 768px) {
 	.link {
+		&_menu {
+			padding: 0;
+		}
 		&_gen {
 			grid-column: 2/3;
 			grid-row: 2/3;

@@ -7,7 +7,11 @@
 			</svg>
 			<span class="article__date">Июль 18, 2021г.</span>
 		</div>
-		<img class="img img_article" srcset="img/last1-320.jpg 768w, img/last1-768.jpg 1440w, img/last1-1440.jpg 1900w" src="img/last1-320.jpg" alt="" sizes="100vw">
+		<picture>
+			<source srcset="img/last1-320.avif 768w, img/last1-768.avif 1440w, img/last1-1440.avif 1900w" sizes="100vw" type="image/avif">
+			<source srcset="img/last1-320.webp 768w, img/last1-768.webp 1440w, img/last1-1440.webp 1900w" sizes="100vw" type="image/webp">
+			<img class="img img_article" srcset="img/last1-320.jpg 768w, img/last1-768.jpg 1440w, img/last1-1440.jpg 1900w" src="img/last1-320.jpg" alt="" sizes="100vw">
+		</picture>
 		<div class="article__feedback">
 			<div class="article__feedback-item">
 				<svg class="icon icon_feedback">

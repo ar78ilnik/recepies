@@ -3,7 +3,11 @@
 	<article class="article article_about">
 		<p class="about__text">Меня зовут Илья и я начал этот блог потому что хочу собрать и сохранить рецепты многочисленных регионов Испании, которые называют Испанская кухня.
 		</p>
-		<img class="img" src="img/about-320.jpg" alt="">
+		<picture>
+			<source srcset="img/about-320.avif 768w, img/about-768.avif 1440w, img/about-1440.avif 1900w" sizes="100vw" type="image/avif">
+			<source srcset="img/about-320.webp 768w, img/about-768.webp 1440w, img/about-1440.webp 1900w" sizes="100vw" type="image/webp">
+			<img class="img" srcset="img/about-320.jpg 768w, img/about-768.jpg 1440w, img/about-1440.jpg 1900w" src="img/about-320.jpg" src="img/about-320.jpg" alt="">
+		</picture>
 		<a href="about.html" class="link link_gen">ПОДРОБНЕЕ</a>
 	</article>
 </section>

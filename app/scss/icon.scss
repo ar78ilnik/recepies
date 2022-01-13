@@ -1,5 +1,6 @@
 /* Icon */
 .icon {
+	fill: var(--text);
 	&_cross {
 		width: 34px;
 		height: 34px;
@@ -20,6 +21,10 @@
 	&_feedback {
 		width: 20px;
 		height: 20px;
+	}
+	&_share {
+		width: inherit;
+		height: inherit;
 	}
 }
 

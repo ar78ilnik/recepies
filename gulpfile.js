@@ -10,7 +10,7 @@ const plumber = require('gulp-plumber');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const postcss = require('postcss');
-//const imagemin = require('gulp-image');
+//const imagemin = require('gulp-imagemin');
 const avif = require('gulp-avif');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
@@ -31,7 +31,7 @@ function html() {
 
 function images() {
     return gulp.src('app/img/**/*.{jpg,png}')
-        .pipe(imagemin())
+        .pipe(imagemin(imagemin.mozjpeg({quality: 75, progressive: true})))
         .pipe(gulp.dest('dist/img'));
 }
 
@@ -114,7 +114,7 @@ function watch() {
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', js);
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
-    //gulp.watch('app/img/**/*.jpg', images);
+    gulp.watch('app/img/**/*.{jpg,png}', copy);
     gulp.watch('app/img/**/*.svg', sprite);
 };
 
@@ -128,11 +128,11 @@ function server() {
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, sprite, style, js, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, sprite, toAvif, toWebp, style, js, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.html = html;
-exports.images = images;
+//exports.images = images;
 exports.toWebp = toWebp;
 exports.toAvif = toAvif;
 exports.js = js;

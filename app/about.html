@@ -14,7 +14,11 @@
 				<div class="container container_main">
 					<article class="article article_about">
 						<h2 class="title title_h2">ОБО МНЕ</h2>
-						<img class="img img_about" src="img/me1-320.jpg" alt="">
+						<picture>
+							<source srcset="img/me1-320.avif 768w, img/me1-768.avif 1440w" sizes="100vw" type="image/avif">
+							<source srcset="img/me1-320.webp 768w, img/me1-768.webp 1440w" sizes="100vw" type="image/webp">
+							<img class="img img_about" srcset="img/me1-320.jpg 768w, img/me1-768.jpg 1440w, img/me1-1440.jpg 1900w" src="img/me1-320.jpg" src="img/me1-320.jpg" alt="">
+						</picture>
 						<h3 class="title title_h2">Hola!  /  Привет!</h3>
 						<div class="article__texts">
 							<p class="article__text">Меня зовут Илья и я начал этот блог потому что хочу собрать
