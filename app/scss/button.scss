@@ -1,5 +1,13 @@
 /* Button */
 .button {
+	&_nav {
+		display: block;
+		width: 45px;
+		height: 45px;
+		margin-left: auto;
+		border: 0;
+		background-color: transparent;
+	}
 	&_input {
 		font-size: 1rem;
 		line-height: 150%;
@@ -12,5 +20,13 @@
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+}
+
+@media (min-width: 1440px) {
+	.button {
+		&_nav {
+			display: none;
+		}
 	}
 }

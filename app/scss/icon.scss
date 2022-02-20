@@ -1,13 +1,18 @@
 /* Icon */
 .icon {
 	fill: var(--text);
-	&_cross {
-		width: 34px;
-		height: 34px;
-	}
 	&_menu {
-		width: 25px;
-		height: 25px;
+		width: 45px;
+		height: 45px;
+		stroke: var(--black);
+	}
+	&_burger,
+	.button_nav-open &_cross{
+		display: block;
+	}
+	&_cross,
+	.button_nav-open &_burger {
+		display: none;
 	}
 	&_arrow-menu {
 		width: 30px;
