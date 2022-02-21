@@ -1,154 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.min.css">
-		<title>Рецепт флана</title>
-	</head>
-	<body class="body">
-		@@include('html_components/_header.html')
-		<h1 class="title title_h1">Рецепт Флана</h1>
-		<div class="container container_body">
-			<main class="main">
-				<div class="container container_main">
-					@@include('html_components/_article-recepie.html')
-					<section class="ingredients">
-						<h2 class="title title_h2">ИНГРЕДИЕНТЫ:</h2>
-						<p class="form form_ingredients">
-							<select class="form__select form__select_ingredients" name="persons" id="person-select">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-							</select>
-							<label for="person-select">порций</label>
-						</p>
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>Молоко</td>
-									<td>0,5 л.</td>
-								</tr>
-								<tr>
-									<td>Сахар</td>
-									<td>125 гр.</td>
-								</tr>
-								<tr>
-									<td>Яйца (среднего размера)</td>
-									<td>3 шт.</td>
-								</tr>
-								<tr>
-									<td>Немного кожи лимона или апельсина</td>
-									<td>1 шт.</td>
-								</tr>
-								<tr>
-									<td>Палочка корицы</td>
-									<td>1 шт.</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section class="prep">
-						<h2 class="title title_h2">ПРИГОТОВЛЕНИЕ:</h2>
-						<ul class="list list_prep">
-							<li class="list__item list__item_prep">
-								<span class="prep__number">1</span>
-								<p class="prep__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.</p>
-								<picture>
-									<source srcset="img/prep1-320.avif 768w, img/prep1-768.avif 1440w, img/prep1-1440.avif 1900w" sizes="100vw" type="image/avif">
-									<source srcset="img/prep1-320.webp 768w, img/prep1-768.webp 1440w, img/prep1-1440.webp 1900w" sizes="100vw" type="image/webp">
-									<img srcset="img/prep1-320.jpg 768w, img/prep1-768.jpg 1440w, img/prep1-1440.jpg 1900w" src="img/prep1-320.jpg" alt="" class="img img_prep">
-								</picture>
-							</li>
-							<li class="list__item list__item_prep">
-								<span class="prep__number">2</span>
-								<p class="prep__text">Смешиваем яйца с сахаром, не спеша помешивая, но не взбиваем. Добавляем остывшее молоко и мешаем до тех пор, пока не растворится сахар. Процеживаем через сито, чтобы очистить от коры корицы и лимона.</p>
-								<div class="lifehack">
-									<span class="lifehack__title">ХИТРОСТИ ПРИ ПРИГОТОВЛЕНИИ ФЛАНА:</span>
-									<p class="lifehack__text">Когда я только учился этому рецепту, у меня получался флан с трещинами на поверхности. Это может происходить по двум причинам. Или не залили воды в поднос, или приготовили крем миксером, таким образом в креме остается воздух. Не надо взбивать, перемешивайте все ингредиенты.</p>
-									<p class="lifehack__text">Не обязательно накрывать формочки фольгой, но нужно убедиться, чтобы вода не попала в крем.</p>
-								</div>
-							</li>
-							<li class="list__item list__item_prep">
-								<span class="prep__number">3</span>
-								<p class="prep__text">Далее приготовим карамель. В кастрюлю поместим 4 столовых ложки сахара и такое же количество воды. На тихом огне доведем до кипения. Должна получится коричневая жидкость. Заливаем в формочки для флана, чтобы немного покрыть дно формочек. Затем неспеша заливаем наш крем. Формочки ставим на поднос с высокими бортами чтобы можно было залить водой, примерно с палец глубиной.</p>
-								<picture>
-									<source srcset="img/prep2-320.avif 768w, img/prep2-768.avif 1440w, img/prep2-1440.avif 1900w" sizes="100vw" type="image/avif">
-									<source srcset="img/prep2-320.webp 768w, img/prep2-768.webp 1440w, img/prep2-1440.webp 1900w" sizes="100vw" type="image/webp">
-									<img srcset="img/prep2-320.jpg 768w, img/prep2-768.jpg 1440w, img/prep2-1440.jpg 1900w" src="img/last1-320.jpg" src="img/prep2-320.jpg" alt="" class="img img_prep">
-								</picture>
-							</li>
-							<li class="list__item list__item_prep">
-								<span class="prep__number">4</span>
-								<p class="prep__text">Далее ставим поднос в духовку на 25-30 минут или пробуя ввести палочку и она должна выйти сухой. Если вы уверены, что флан готов, оставьте его немного остыть и далее в холодильник на 24 часа.</p>
-								<div class="lifehack">
-									<span class="lifehack__title">С ЧЕМ ЛУЧШЕ СОЧЕТАТЬ ФЛАН И КАК ПОДАВАТЬ:</span>
-									<p class="lifehack__text">Флан можно подавать со сливками или с фруктами.</p>
-								</div>
-							</li>
-						</ul>
-					</section>
-					<section class="share">
-						<h2 class="title title_h2">ПОДЕЛИТЬСЯ РЕЦЕПТОМ:</h2>
-						<ul class="list list_share">
-							<li class="list__item">
-								<a href="#" class="link link_share">
-									<svg class="icon icon_share">
-										<use xlink:href="img/sprite.svg#facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="list__item">
-								<a href="#" class="link link_share">
-									<svg class="icon icon_share">
-										<use xlink:href="img/sprite.svg#instagram"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="list__item">
-								<a href="#" class="link link_share">
-									<svg class="icon icon_share">
-										<use xlink:href="img/sprite.svg#vk"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="list__item">
-								<a href="#" class="link link_share">
-									<svg class="icon icon_share">
-										<use xlink:href="img/sprite.svg#pinterest"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="list__item">
-								<a href="#" class="link link_share">
-									<svg class="icon icon_share">
-										<use xlink:href="img/sprite.svg#whatsapp"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="list__item">
-								<a href="#" class="link link_share">
-									<svg class="icon icon_share">
-										<use xlink:href="img/sprite.svg#telegram"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</section>
-					@@include('html_components/_comments.html')
-				</div>
-			</main>
-			<aside class="aside">
-				<div class="container container_aside">
-					@@include('html_components/_search.html')
-					@@include('html_components/_alpha.html')
-					@@include('html_components/_new.html')
-					@@include('html_components/_tags.html')
-				</div>
-			</aside>
-		</div>
-		@@include('html_components/_footer.html')
-	</body>
-	<script src="js/script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Рецепт флана</title>
+</head>
+
+<body class="body">
+    @@include('html_components/_header.html')
+    <h1 class="title title_h1">Рецепт Флана</h1>
+    <div class="container container_body">
+        <main class="main">
+            <div class="container container_main">
+                @@include('html_components/_article-recepie.html')
+                <section class="ingredients">
+                    <h2 class="title title_h2">ИНГРЕДИЕНТЫ:</h2>
+                    <p class="form form_ingredients">
+                        <select class="form__select form__select_ingredients" name="persons" id="person-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <label for="person-select">порций</label>
+                    </p>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Молоко</td>
+                                <td>0,5 л.</td>
+                            </tr>
+                            <tr>
+                                <td>Сахар</td>
+                                <td>125 гр.</td>
+                            </tr>
+                            <tr>
+                                <td>Яйца (среднего размера)</td>
+                                <td>3 шт.</td>
+                            </tr>
+                            <tr>
+                                <td>Немного кожи лимона или апельсина</td>
+                                <td>1 шт.</td>
+                            </tr>
+                            <tr>
+                                <td>Палочка корицы</td>
+                                <td>1 шт.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="prep">
+                    <h2 class="title title_h2">ПРИГОТОВЛЕНИЕ:</h2>
+                    <ul class="list list_prep">
+                        <li class="list__item list__item_prep">
+                            <span class="prep__number">1</span>
+                            <p class="prep__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.</p>
+                            <img srcset="img/prep1-320.jpg 768w, img/prep1-768.jpg 1440w, img/prep1-1440.jpg 1900w" src="img/prep1-320.jpg" alt="" class="img img_prep">
+                        </li>
+                        <li class="list__item list__item_prep">
+                            <span class="prep__number">2</span>
+                            <p class="prep__text">Смешиваем яйца с сахаром, не спеша помешивая, но не взбиваем. Добавляем остывшее молоко и мешаем до тех пор, пока не растворится сахар. Процеживаем через сито, чтобы очистить от коры корицы и лимона.</p>
+                            <div class="lifehack">
+                                <span class="lifehack__title">ХИТРОСТИ ПРИ ПРИГОТОВЛЕНИИ ФЛАНА:</span>
+                                <p class="lifehack__text">Когда я только учился этому рецепту, у меня получался флан с трещинами на поверхности. Это может происходить по двум причинам. Или не залили воды в поднос, или приготовили крем миксером, таким образом в креме остается воздух. Не надо взбивать, перемешивайте все ингредиенты.</p>
+                                <p class="lifehack__text">Не обязательно накрывать формочки фольгой, но нужно убедиться, чтобы вода не попала в крем.</p>
+                            </div>
+                        </li>
+                        <li class="list__item list__item_prep">
+                            <span class="prep__number">3</span>
+                            <p class="prep__text">Далее приготовим карамель. В кастрюлю поместим 4 столовых ложки сахара и такое же количество воды. На тихом огне доведем до кипения. Должна получится коричневая жидкость. Заливаем в формочки для флана, чтобы немного покрыть дно формочек. Затем неспеша заливаем наш крем. Формочки ставим на поднос с высокими бортами чтобы можно было залить водой, примерно с палец глубиной.</p>
+                            <img srcset="img/prep2-320.jpg 768w, img/prep2-768.jpg 1440w, img/prep2-1440.jpg 1900w" src="img/last1-320.jpg" src="img/prep2-320.jpg" alt="" class="img img_prep">
+                        </li>
+                        <li class="list__item list__item_prep">
+                            <span class="prep__number">4</span>
+                            <p class="prep__text">Далее ставим поднос в духовку на 25-30 минут или пробуя ввести палочку и она должна выйти сухой. Если вы уверены, что флан готов, оставьте его немного остыть и далее в холодильник на 24 часа.</p>
+                            <div class="lifehack">
+                                <span class="lifehack__title">С ЧЕМ ЛУЧШЕ СОЧЕТАТЬ ФЛАН И КАК ПОДАВАТЬ:</span>
+                                <p class="lifehack__text">Флан можно подавать со сливками или с фруктами.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="share">
+                    <h2 class="title title_h2">ПОДЕЛИТЬСЯ РЕЦЕПТОМ:</h2>
+                    <ul class="list list_share">
+                        <li class="list__item">
+                            <a href="#" class="link link_share">
+                                <svg class="icon icon_share">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="link link_share">
+                                <svg class="icon icon_share">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="link link_share">
+                                <svg class="icon icon_share">
+                                    <use xlink:href="img/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="link link_share">
+                                <svg class="icon icon_share">
+                                    <use xlink:href="img/sprite.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="link link_share">
+                                <svg class="icon icon_share">
+                                    <use xlink:href="img/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="link link_share">
+                                <svg class="icon icon_share">
+                                    <use xlink:href="img/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                @@include('html_components/_comments.html')
+            </div>
+        </main>
+        <aside class="aside">
+            <div class="container container_aside">
+                @@include('html_components/_search.html')
+                @@include('html_components/_alpha.html')
+                @@include('html_components/_new.html')
+                @@include('html_components/_tags.html')
+            </div>
+        </aside>
+    </div>
+    @@include('html_components/_footer.html')
+</body>
+<script src="js/script.js"></script>
+
 </html>

@@ -10,9 +10,6 @@ const plumber = require('gulp-plumber');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const postcss = require('postcss');
-//const imagemin = require('gulp-imagemin');
-const avif = require('gulp-avif');
-const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
 
@@ -28,32 +25,6 @@ function html() {
             title: 'Html'
         }));
 };
-
-function images() {
-    return gulp.src('app/img/**/*.{jpg,png}')
-        .pipe(imagemin(imagemin.mozjpeg({quality: 75, progressive: true})))
-        .pipe(gulp.dest('dist/img'));
-}
-
-function toWebp() {
-    return gulp.src('app/img/**/*.{jpg,png}')
-        .pipe(webp())
-        .pipe(gulp.dest('dist/img'))
-        .pipe(debug({
-            title: 'toWebp'
-        }));
-}
-
-function toAvif() {
-    return gulp.src('app/img/**/*.{jpg, png}')
-        .pipe(avif({
-            quality: 50
-        }))
-        .pipe(gulp.dest('dist/img'))
-        .pipe(debug({
-            title: 'toAvif'
-        }));
-}
 
 function sprite() {
     return gulp.src('app/img/**/*.svg')
@@ -128,13 +99,10 @@ function server() {
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, sprite, toAvif, toWebp, style, js, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, sprite, style, js, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.html = html;
-//exports.images = images;
-exports.toWebp = toWebp;
-exports.toAvif = toAvif;
 exports.js = js;
 exports.sprite = sprite;
 exports.copy = copy;
